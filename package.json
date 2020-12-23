@@ -1,0 +1,14 @@
+{
+  "name": "protfolio",
+  "version": "1.0.0",
+  "description": "protfolio example 1",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/main.scss/ -o dist/css/ --recursive"
+  },
+  "author": "Kannan",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
