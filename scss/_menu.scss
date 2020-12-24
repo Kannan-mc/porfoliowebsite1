@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background:#fff;
+        background:set-text-color($primary-color);
         @include easeOut; 
     }
     //menu lines rotate to X
@@ -113,7 +113,11 @@
      font-weight: 500; 
      @include easeOut;    
 
+          &:hover{
+      color:$secondary-color;
+     }
    }
+  
 }          
 //Delay each nav item
 @for $x from 1 through 4{
@@ -121,3 +125,4 @@
         transition-delay: $x*0.16s;
     }
 }
+ 

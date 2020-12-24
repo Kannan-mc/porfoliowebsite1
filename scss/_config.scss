@@ -4,7 +4,7 @@ $teritary-color:rgb(237, 45, 100);
 $show-home-image: true; 
 $home-image:url(../img/background.jpg);                   
 $background-opacity: 0.7;       
-   
+      
     
 @mixin easeOut{
     transition: all .5s ease-out;
@@ -30,5 +30,39 @@ $background-opacity: 0.7;
         } 
     }
     
+}
+//set text color
+@function set-text-color($color){
+    @if(lightness($color)>40){
+        @return #000;
+    }@else{
+            @return #fff;
+        }
+    }
+     
+
+//Media Query Mixins
+@mixin mediaSm{
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd{
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg{
+    @media screen and (min-width:769px) and (max-width:1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl{
+    @media screen and (min-width:1170px) {
+        @content;
+    }
 }
  
