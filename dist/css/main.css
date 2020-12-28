@@ -198,6 +198,31 @@ main {
       transition: all .5s ease-out;
       transform: translate3d(5px, -5px, 0); }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem; }
+  .boxes .box1, .boxes .box2, .boxes .address {
+    font-size: 2rem;
+    border: 3px #5e5e5e solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    border-radius: 25%;
+    transition: all .5s ease-out; }
+    .boxes .box1:hover, .boxes .box2:hover, .boxes .address:hover {
+      padding: 1rem 2rem;
+      background: #eece1a;
+      color: #000;
+      border-top-left-radius: 20%;
+      border-color: #d0d0d0; }
+      .boxes .box1:hover span, .boxes .box2:hover span, .boxes .address:hover span {
+        color: #ed2d64; }
+  .boxes .box2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    align-self: center; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
